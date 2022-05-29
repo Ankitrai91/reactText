@@ -76,7 +76,7 @@ text.select();
         </div>
 <div className="container my-3" style={{color:props.mode==='dark' ? 'white':'#020114'}}>
   <h1>text your summary</h1>
- <p> {text.split( /\s+/).filter((char)=>{return char.length!==0}).length} words and {text.length} character </p>
+ <p> {text.split(" ").filter((char)=>{return char.length!==0}).length} words and {text.length} character </p>
  <p>it takes {0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} minutes to read</p>
  <h3> Preview</h3>
  <p><i>{text.length>0 ? text : "enter your text here  "}</i> </p>
